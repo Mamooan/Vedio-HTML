@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+
+.bt{
+
+    height: 10vh;
+    width: 10vw;
+    background-color: red;
+    border: 1px black solid;
+    margin-top: 200px;
+    margin-left: 500px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+}
+.bg{
+    position: absolute;
+    background-color: blue;
+    border: 1px blue solid;
+    height: 10vh;
+    width: 10vw;
+    margin-top: -2.7vh;
+    transform: scaleX(0);
+    transition-duration: 0.2s;
+    opacity: 0;
+    z-index: -1;
+    
+
+}
+.bt:hover>.bg{
+    transform: scaleX(1);
+    
+    opacity: 1;
+    
+}
+.bt:hover>.t1{
+    z-index: 1;
+    color:white;
+}
+    </style>
+</head>
+<body>
+    <button class="bt">
+    <div class="bg"></div>
+    <h1 class="t1">document</h1>
+    </button>
+</body>
+</html>
